@@ -25,8 +25,8 @@ public class MessagePo {
 	@Column(name = "MESSAGE_ID")
 	private long messageId;
 	
-	@Column(name = "DESC")
-	private String desc;
+	@Column(name = "MESSAGE_DATA")
+	private String messageData;
 	
 }
 

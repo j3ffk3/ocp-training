@@ -1,1 +1,1 @@
-INSERT INTO MESSAGE(DESC) VALUES ('Hello, welcome to labs!');
+INSERT INTO MESSAGE(MESSAGE_DATA) VALUES ('Hello, welcome to labs!');

@@ -26,7 +26,7 @@ public class MessageRepositoryImpl implements MessageRepository {
 		messageDao.findAll().forEach(item -> {
 			MessageDo messageDo = new MessageDo();
 			messageDo.setMessageId(item.getMessageId());
-			messageDo.setData(item.getDesc());
+			messageDo.setData(item.getMessageData());
 			messageDoList.add(messageDo);
 		});
 		return messageDoList;
@@ -39,7 +39,7 @@ public class MessageRepositoryImpl implements MessageRepository {
 	public void saveMessage(MessageDo messageDo) {
 		MessagePo messagePo=new MessagePo();
 		messagePo.setMessageId(messageDo.getMessageId());
-		messagePo.setDesc(messageDo.getData());
+		messagePo.setMessageData(messageDo.getData());
 		messageDao.save(messagePo);
 	}
 
